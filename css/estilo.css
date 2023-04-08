@@ -16,6 +16,7 @@ body {
 				url(../img/ruido.png),
 				linear-gradient(50deg,#ff4169,#7c26f8);
 	background-attachment: fixed;
+	background-size: cover;
 	font-family: Helvetica,Arial,sans-serif;
 }
 
@@ -152,6 +153,20 @@ nav.navbar-transparente {
 	box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
   }
 
+.espacoPhone {
+	margin-top: 10px;
+}
+
+.espacoResumo {
+	padding-bottom: 10px;
+}
+
+/*back-end*/
+
+.topo_1 {
+	margin-top: 80px;
+}
+
 /*Rodapé*/
 
 footer {
@@ -207,7 +222,18 @@ h3 {
 	letter-spacing: -0.04em;
 }
 
+/* Ajusta o tamanho das imagens do carrossel para dispositivos móveis */
+.img-carrossel {
+	max-width: 100%;
+	height: auto; /* ou defina uma altura fixa */
+  }
 
+/* Para as versões menores do Bootstrap, o carrossel precisa estar centralizado */
+@media (max-width: 767.98px) {
+	.carousel-item {
+	  text-align: center;
+	}
+  }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
